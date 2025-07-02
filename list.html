@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Task Manager</title>
+  <link rel="stylesheet" href="list.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Pro Task Manager</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter task (e.g. Submit DBMS Assignment)">
+      <select id="priority">
+        <option value="Normal">Normal</option>
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="date" id="deadline">
+      <button onclick="addTask()">➕</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="list.js"></script>
+</body>
+</html>
